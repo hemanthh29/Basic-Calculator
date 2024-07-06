@@ -10,17 +10,18 @@
 }
 .Calculator{
     border-style:none;
-    background-color:#1d1d1d;
-    height: 90vh;
+    background-color:#474646;
+    height:110%;
     border-radius:16px;
 }   
 #display{
     background-color:#a7af7c;
     color:#10110c;
+    font-size:22px;
     border-style:none;
     outline:none;
     width:91.5%;
-    height:10%;
+    height:12%;
     border-radius:10px;
 }
 .Clear-Button{
@@ -31,6 +32,10 @@
     width:100%;
     height:70%;
     outline: none !important;
+    transition:filter 0.3s ease;
+}
+.Delete-Button{
+    background-color:#ff9900;
 }
 .Standard-Button{
     background-color:#484848;
@@ -40,13 +45,46 @@
     width:100%;
     height:70%;
     outline: none !important;
+    transition:filter 0.3s ease;
 }
 .Addition{
     height:170%
 }
-@media (min-width:320px) and (max-width:480px){
+.Equal-To{
+    background-color:#5eafef;
+    transition: filter 0.3s ease;
+}
+.Clear-Button:hover{
+    filter:brightness(3.5);
+}
+.Delete-Button:hover {
+    filter: brightness(1.2);
+}
+.Standard-Button:hover{
+    filter: brightness(1.2);
+}
+.Equal-To:hover {
+    filter: brightness(80%);
+}
+
+.Clear-Button:active,
+.Standard-Button:active,
+.Equal-To:active {
+    transform: translateY(2px);
+}
+@media (min-width:320px){
     .Calculator{
         width:100%;
+    }
+}
+@media (min-width:321px) and (max-width:376px){
+    .Calculator{
+        width:90%;
+    }
+}
+@media (min-width:377px) and (max-width:480px){
+    .Calculator{
+        width:80%;
     }
 }
 @media (min-width: 481px) and (max-width: 768px) {
@@ -56,6 +94,6 @@
 }
 @media (min-width: 769px) {
     .Calculator {
-        width: 40%;
+        width: 30%;
     }
 }

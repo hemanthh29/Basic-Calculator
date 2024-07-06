@@ -25,110 +25,122 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <!--Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="Background-Container">
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center">
+                <div class="col-12 text-center mt-3">
                     <h1 class="Heading">
                         Basic Calculator
                     </h1>
                 </div>
                 <div class="col-12">
-                    <div class="Calculator shadow ml-auto mr-auto text-center">
-                        <input type="text" id="display" class="mt-3">
+                    <div class="Calculator shadow ml-auto mr-auto text-center mt-2 mt-md-4">
+                        <input type="text" id="display" class="mt-3" readonly>
                         <div class="row pl-3 pr-3">
-                            <div class="col-6">
-                                <button class="Clear-Button text-center mt-4 rounded shadow-sm">
+                            <div class="col-3">
+                                <button class="Clear-Button text-center mt-4 rounded shadow-sm" onclick = "ClearDisplay()">
                                     C
                                 </button>
                             </div>
+                            <div class = "col-3">
+                                <button class="Clear-Button Delete-Button text-center mt-4 rounded shadow-sm" onclick = "Delete()">
+                                    Del
+                                </button>
+                            </div>
                             <div class="col-3">
-                                <button class="Standard-Button text-center mt-4  rounded shadow-sm">
+                                <button class="Standard-Button text-center mt-4  rounded shadow-sm"
+                                    onclick="AddToDisplay('/')">
                                     /
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="Standard-Button mt-4 text-center rounded shadow-sm">
+                                <button class="Standard-Button mt-4 text-center rounded shadow-sm" onclick="AddToDisplay('*')">
                                     *
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="Standard-Button text-center mt-4  rounded shadow-sm">
+                                <button class="Standard-Button text-center mt-4  rounded shadow-sm" onclick="AddToDisplay('7')">
                                     7
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="Standard-Button mt-4 text-center rounded shadow-sm">
+                                <button class="Standard-Button mt-4 text-center rounded shadow-sm" onclick="AddToDisplay('8')">
                                     8
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="Standard-Button text-center mt-4  rounded shadow-sm">
+                                <button class="Standard-Button text-center mt-4  rounded shadow-sm" onclick="AddToDisplay('9')">
                                     9
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="Standard-Button mt-4 text-center rounded shadow-sm">
+                                <button class="Standard-Button mt-4 text-center rounded shadow-sm" onclick="AddToDisplay('-')">
                                     -
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="Standard-Button text-center mt-4  rounded shadow-sm">
+                                <button class="Standard-Button text-center mt-4  rounded shadow-sm" onclick="AddToDisplay('4')">
                                     4
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="Standard-Button mt-4 text-center rounded shadow-sm">
+                                <button class="Standard-Button mt-4 text-center rounded shadow-sm" onclick="AddToDisplay('5')">
                                     5
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="Standard-Button text-center mt-4  rounded shadow-sm">
+                                <button class="Standard-Button text-center mt-4  rounded shadow-sm" onclick="AddToDisplay('6')">
                                     6
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="Standard-Button Addition mt-4 text-center rounded shadow-sm">
+                                <button class="Standard-Button Addition mt-4 text-center rounded shadow-sm" onclick="AddToDisplay('+')">
                                     +
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="Standard-Button text-center mt-4  rounded shadow-sm">
+                                <button class="Standard-Button text-center mt-4  rounded shadow-sm" onclick="AddToDisplay('1')">
                                     1
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="Standard-Button mt-4 text-center rounded shadow-sm">
+                                <button class="Standard-Button mt-4 text-center rounded shadow-sm" onclick="AddToDisplay('2')">
                                     2
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="Standard-Button text-center mt-4  rounded shadow-sm">
+                                <button class="Standard-Button text-center mt-4  rounded shadow-sm" onclick="AddToDisplay('3')">
                                     3
                                 </button>
                             </div>
                         </div>
                         <div class="row pl-3 pr-3">
                             <div class="col-3">
-                                <button class="Standard-Button text-center mt-4  rounded shadow-sm">
+                                <button class="Standard-Button text-center mt-4  rounded shadow-sm" onclick="AddToDisplay('0')">
                                     0
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="Standard-Button mt-4 text-center rounded shadow-sm">
+                                <button class="Standard-Button mt-4 text-center rounded shadow-sm" onclick="AddToDisplay('00')">
                                     00
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="Standard-Button text-center mt-4  rounded shadow-sm">
+                                <button class="Standard-Button text-center mt-4  rounded shadow-sm" onclick="AddToDisplay('.')">
                                     .
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="Standard-Button mt-4 text-center rounded shadow-sm">
+                                <button class="Standard-Button Equal-To mt-4 text-center rounded shadow-sm" onclick = "Equals()">
                                     =
                                 </button>
                             </div>
