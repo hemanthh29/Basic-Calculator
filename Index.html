@@ -44,7 +44,7 @@
                 </div>
                 <div class="col-12">
                     <div class="Calculator shadow ml-auto mr-auto text-center mt-2 mt-md-4">
-                        <input type="text" id="display" class="mt-3" readonly>
+                        <input type="text" id="display" class="mt-3 text-right" readonly>
                         <div class="row pl-3 pr-3">
                             <div class="col-3">
                                 <button class="Clear-Button text-center mt-4 rounded shadow-sm" onclick = "ClearDisplay()">
@@ -57,13 +57,13 @@
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="Standard-Button text-center mt-4  rounded shadow-sm"
+                                <button class="Standard-Button Operator-Button text-center mt-4  rounded shadow-sm"
                                     onclick="AddToDisplay('/')">
                                     /
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="Standard-Button mt-4 text-center rounded shadow-sm" onclick="AddToDisplay('*')">
+                                <button class="Standard-Button Operator-Button mt-4 text-center rounded shadow-sm" onclick="AddToDisplay('*')">
                                     *
                                 </button>
                             </div>
@@ -83,7 +83,7 @@
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="Standard-Button mt-4 text-center rounded shadow-sm" onclick="AddToDisplay('-')">
+                                <button class="Standard-Button Operator-Button mt-4 text-center rounded shadow-sm" onclick="AddToDisplay('-')">
                                     -
                                 </button>
                             </div>
@@ -103,7 +103,7 @@
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="Standard-Button Addition mt-4 text-center rounded shadow-sm" onclick="AddToDisplay('+')">
+                                <button class="Standard-Button Operator-Button Addition mt-4 text-center rounded shadow-sm" onclick="AddToDisplay('+')">
                                     +
                                 </button>
                             </div>
@@ -135,7 +135,7 @@
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button class="Standard-Button text-center mt-4  rounded shadow-sm" onclick="AddToDisplay('.')">
+                                <button class="Standard-Button Dot-Button text-center mt-4  rounded shadow-sm" onclick="AddToDisplay('.')">
                                     .
                                 </button>
                             </div>
