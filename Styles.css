@@ -97,3 +97,17 @@
         width: 30%;
     }
 }
+@media (max-width:768px){
+    .Clear-Button:hover{
+        filter:none;
+    }
+    .Delete-Button:hover {
+        filter:none;
+    }
+    .Standard-Button:hover{
+        filter:none;
+    }
+    .Equal-To:hover {
+        filter:none;
+    }
+}
