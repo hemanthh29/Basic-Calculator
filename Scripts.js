@@ -11,6 +11,14 @@ document.addEventListener('keypress', function (event) {
         // Add numeric keys to display
         AddToDisplay(event.key);
     }
+    else if (event.key == '+' || event.key == '-' || event.key == '*' || event.key == '/') {
+        // Add basic operators to display
+        AddToDisplay(event.key);
+    }
+    else if (event.key == '.') {
+        // Add decimal point to display
+        AddToDisplay(event.key);
+    }
 });
 // Function to clear the display
 function ClearDisplay() {
