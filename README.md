@@ -44,7 +44,41 @@ Clearing Input: Press the "C" button or 'C' key to clear the display.
 Deleting Input: Press the "Del" button, delete key, or backspace key to delete the last character.
 Calculating Results: Press the "=" button or 'Enter' key to evaluate the expression and display the result.
 
+Future Improvements:
+
+Scientific Calculator Functions:
+Expand Functionality: Add advanced mathematical operations like square roots, trigonometric functions (sine, cosine, tangent), logarithms, and exponential functions.
+Enhanced Operators: Include functions for percentage calculations, factorials, and combinations.
+
+User History:
+History Panel: Implement a feature to display a history of recent calculations so users can review and reuse previous results.
+
+Clear History: Add an option to clear the history list.
+
+Custom Themes:
+Theme Selection: Allow users to select from different themes or color schemes for the calculator to personalize their experience.
+
+Dark Mode: Include a dark mode option for use in low-light environments.
+
+Error Handling and Feedback:
+Detailed Error Messages: Improve error handling to provide more specific feedback for invalid inputs or 
+operations.
+
+User Guidance: Offer suggestions or corrections when errors occur, such as invalid expressions or 
+unsupported operations.
+
+Screenshots:
+
+![Sceenshot](image.png)
+
 How to Run:
-To run the calculator, open the Index.html file in a web browser.
+
+1.Open the Repository Using Web Url:
+https://github.com/hemanthh29/Basic-Calculator.git
+
+2.Download Zip file
+
+3.Open the Project in Your Browser:
+Open index.html in your web browser to view and interact with the application.
 
 Built by [Hemanth]
