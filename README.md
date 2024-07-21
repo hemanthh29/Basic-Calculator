@@ -32,6 +32,10 @@ Characters ('.', C):
 Keys (Enter, Backspace, Delete):
 'Enter' to get results.
 'Backspace' and 'Delete' to delete the last digit entered.
+
+Division by Zero: If a user attempts to divide by zero, the calculator will display a custom message "Cannot divide by zero" instead of the default JavaScript error. This ensures a clear and user-friendly error notification.
+General Error Handling: If the user inputs an invalid mathematical expression or an operation that results in an error, the calculator will display "Error + Error Message" to indicate the issue.
+
 Usage:
 
 Numeric Input: Click on numeric buttons (0-9) or use keyboard numbers to input values.

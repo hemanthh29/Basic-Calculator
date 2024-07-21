@@ -44,7 +44,24 @@ document.addEventListener('keydown', function (event) {
 });
 // Function to evaluate the expression in the display and show the result
 function Equals() {
-    document.getElementById("display").value = eval(document.getElementById("display").value);
+    let display = document.getElementById("display");
+    let expression = display.value;
+
+    try {
+        // Evaluate the expression
+        let result = eval(expression);
+
+        // Check for division by zero or other possible errors
+        if (expression.includes('/0')) {
+            throw new Error("Cannot divide by zero");
+        }
+        
+        // Display the result
+        display.value = result;
+    } catch (e) {
+        // Handle the error by displaying a specific message
+        display.value = "Error: " + e.message;
+    }
 }
 // Listen for Enter key to evaluate the expression in the display
 document.addEventListener('keydown', function (event) {
